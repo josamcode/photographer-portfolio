@@ -1,7 +1,3 @@
-# Let's create the README.md file with the provided content.
-
-content = """
-
 # Photographer Portfolio Website
 
 This is a simple responsive photographer portfolio website. It showcases various photography projects and provides a smooth user experience with animation effects and scroll interactions.
