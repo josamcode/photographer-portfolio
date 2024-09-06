@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Photographer</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    />
+    <!-- مكتبة AOS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header id="header" >
+      <div class="container">
+        <div
+          class="header-links"
+          id="header-links"
+
+        >
+          <ul class="links-container">
+            <li class="header-link" onclick="scrollToSection('1')">Home</li>
+            <li class="header-link" onclick="scrollToSection('2')">Services</li>
+            <li class="header-link" onclick="scrollToTop()">About</li>
+            <li class="header-link" onclick="scrollToTop()">Portfolio</li>
+          </ul>
+        </div>
+        <div class="logo-container">
+          <h1 class="logo-text">Photographer</h1>
+        </div>
+        <div class="buttons-container">
+          <a href="" class="header-button"> CALL ME </a>
+        </div>
+        <div id="toggleIcon" class="toggle-icon-container">
+          <div class="line" id="bars-line-one"></div>
+          <div class="line short-line" id="short-line"></div>
+          <div class="line" id="bars-line-two"></div>
+        </div>
+      </div>
+    </header>
+
+    <section class="hero-section section1">
+      <div class="container">
+        <h1>I'm Jose Mourinho</h1>
+      </div>
+    </section>
+
+    <section class="space" data-aos="fade-right">
+      <div class="container">
+        <p>don't forget to watch</p>
+        <h1>Our Portfolio</h1>
+        <p>
+          use this space to share details about your business and the nature of
+          your work.
+        </p>
+        <div class="brands" data-aos="fade-left">
+          <h3 class="brand-1" data-aos="zoom-in">the knot</h3>
+          <h3 class="brand-2" data-aos="zoom-in" data-aos-delay="200">
+            vanity fair
+          </h3>
+          <h3 class="brand-3" data-aos="zoom-in" data-aos-delay="400">
+            brides
+          </h3>
+          <h3 class="brand-4" data-aos="zoom-in" data-aos-delay="600">
+            twiddings
+          </h3>
+        </div>
+      </div>
+    </section>
+
+    <section class="portfolio section2" data-aos="fade-up">
+      <div class="container">
+        <div class="card" data-aos="zoom-in" data-aos-delay="100">
+          <img src="images/wedding.jpg" alt="" />
+          <h3>Project One <i class="fa-solid fa-angles-right"></i></h3>
+        </div>
+        <div class="card" data-aos="zoom-in" data-aos-delay="200">
+          <img src="images/wedding-2.jpg" alt="" />
+          <h3>Project Two <i class="fa-solid fa-angles-right"></i></h3>
+        </div>
+        <div class="card" data-aos="zoom-in" data-aos-delay="300">
+          <img src="images/wedding-3.jpg" alt="" />
+          <h3>Project Three <i class="fa-solid fa-angles-right"></i></h3>
+        </div>
+        <div class="card" data-aos="zoom-in" data-aos-delay="400">
+          <img src="images/wedding-4.jpg" alt="" />
+          <h3>Project Four <i class="fa-solid fa-angles-right"></i></h3>
+        </div>
+        <div class="card" data-aos="zoom-in" data-aos-delay="500">
+          <img src="images/wedding.jpg" alt="" />
+          <h3>Project Five <i class="fa-solid fa-angles-right"></i></h3>
+        </div>
+        <div class="card" data-aos="zoom-in" data-aos-delay="600">
+          <img src="images/wedding.jpg" alt="" />
+          <h3>Project Six <i class="fa-solid fa-angles-right"></i></h3>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer-section" id="faq" data-aos="fade-up">
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-about" data-aos="fade-right">
+            <h3>About Us</h3>
+            <p>
+              We are a leading company in our field, dedicated to providing
+              top-notch services to our clients. Our commitment to excellence
+              has earned us a reputation for quality and reliability.
+            </p>
+          </div>
+          <div class="footer-nav" data-aos="fade-left" data-aos-delay="200">
+            <h3>Quick Links</h3>
+            <ul>
+              <li><a href="#">Home</a></li>
+              <li><a href="#">About</a></li>
+              <li><a href="#">Services</a></li>
+              <li><a href="#">Contact</a></li>
+              <li><a href="#">Privacy Policy</a></li>
+            </ul>
+          </div>
+          <div
+            class="footer-contact"
+            data-aos="fade-right"
+            data-aos-delay="400"
+          >
+            <h3>Contact Us</h3>
+            <p>Email: info@company.com</p>
+            <p>Phone: +123 456 7890</p>
+            <p>Address: 123 Street, City, Country</p>
+          </div>
+          <div class="footer-social" data-aos="fade-left" data-aos-delay="600">
+            <h3>Follow Us</h3>
+            <ul>
+              <li><a href="#">Facebook</a></li>
+              <li><a href="#">Twitter</a></li>
+              <li><a href="#">LinkedIn</a></li>
+              <li><a href="#">Instagram</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-bottom" data-aos="fade-up">
+          <p>
+            &copy; 2024 Jo<span class="full-stop">.</span>Sam , All Rights
+            Reserved.
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/@studio-freight/lenis@1.0.9/bundled/lenis.min.js"></script>
+    <script>
+      // تفعيل Lenis
+      const lenis = new Lenis({
+        duration: 1.5,
+        easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)), // استخدام دالة تنعيم مخصصة
+        smoothWheel: true, // التمرير باستخدام عجلة الماوس
+        smoothTouch: true, // التمرير باستخدام الشاشة اللمسية
+      });
+
+      // التمرير إلى القسم الرابع
+      function scrollToSection(index) {
+        const section = document.querySelector(`.section${index}`);
+        const offset = -100; // المسافة التي تريد إضافتها كـ padding
+        lenis.scrollTo(section, { offset });
+      }
+
+      // Animation frame loop
+      function raf(time) {
+        lenis.raf(time);
+        requestAnimationFrame(raf);
+      }
+
+      // التفاعل مع أحداث التمرير
+      lenis.on("scroll", ({ scroll, limit, velocity }) => {
+        console.log(`موقع التمرير الحالي: ${scroll}, السرعة: ${velocity}`);
+      });
+
+      // التحكم في التمرير باستخدام الأسهم
+      document.addEventListener("keydown", (event) => {
+        const scrollAmount = 100; // مقدار التمرير عند الضغط على الزر
+
+        if (event.key === "ArrowDown") {
+          event.preventDefault(); // منع التمرير الافتراضي
+          lenis.scrollTo(window.scrollY + scrollAmount); // التمرير للأسفل
+        }
+
+        if (event.key === "ArrowUp") {
+          event.preventDefault(); // منع التمرير الافتراضي
+          lenis.scrollTo(window.scrollY - scrollAmount); // التمرير للأعلى
+        }
+      });
+
+      requestAnimationFrame(raf);
+    </script>
+
+    <script src="js/script.js"></script>
+    <!-- سكريبت AOS -->
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        duration: 1200, // مدة التأثير
+        once: true, // تشغيل التأثير مرة واحدة فقط عند التمرير
+      });
+    </script>
+  </body>
+</html>
