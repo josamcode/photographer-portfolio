@@ -53,10 +53,3 @@ This is a simple responsive photographer portfolio website. It showcases various
 
 This project is open-source and available under the [MIT License](LICENSE).
 """
-
-# Saving the content to a README.md file
-
-with open("/mnt/data/README.md", "w") as file:
-file.write(content)
-
-"/mnt/data/README.md"
