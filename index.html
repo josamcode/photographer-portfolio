@@ -152,52 +152,6 @@
       </div>
     </footer>
 
-    <script src="https://cdn.jsdelivr.net/npm/@studio-freight/lenis@1.0.9/bundled/lenis.min.js"></script>
-    <script>
-      // تفعيل Lenis
-      const lenis = new Lenis({
-        duration: 1.5,
-        easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)), // استخدام دالة تنعيم مخصصة
-        smoothWheel: true, // التمرير باستخدام عجلة الماوس
-        smoothTouch: true, // التمرير باستخدام الشاشة اللمسية
-      });
-
-      // التمرير إلى القسم الرابع
-      function scrollToSection(index) {
-        const section = document.querySelector(`.section${index}`);
-        const offset = -100; // المسافة التي تريد إضافتها كـ padding
-        lenis.scrollTo(section, { offset });
-      }
-
-      // Animation frame loop
-      function raf(time) {
-        lenis.raf(time);
-        requestAnimationFrame(raf);
-      }
-
-      // التفاعل مع أحداث التمرير
-      lenis.on("scroll", ({ scroll, limit, velocity }) => {
-        console.log(`موقع التمرير الحالي: ${scroll}, السرعة: ${velocity}`);
-      });
-
-      // التحكم في التمرير باستخدام الأسهم
-      document.addEventListener("keydown", (event) => {
-        const scrollAmount = 100; // مقدار التمرير عند الضغط على الزر
-
-        if (event.key === "ArrowDown") {
-          event.preventDefault(); // منع التمرير الافتراضي
-          lenis.scrollTo(window.scrollY + scrollAmount); // التمرير للأسفل
-        }
-
-        if (event.key === "ArrowUp") {
-          event.preventDefault(); // منع التمرير الافتراضي
-          lenis.scrollTo(window.scrollY - scrollAmount); // التمرير للأعلى
-        }
-      });
-
-      requestAnimationFrame(raf);
-    </script>
-
     <script src="js/script.js"></script>
     <!-- سكريبت AOS -->
     <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
